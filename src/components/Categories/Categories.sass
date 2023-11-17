@@ -1,0 +1,23 @@
+.categories-menu
+    all: unset
+    list-style: none
+    padding: 0
+    display: flex
+    flex-direction: column
+    gap: 20px
+    width: 200px
+    background-color: rgba(0,0,0,.6)
+    padding: 50px 20px 0
+    box-sizing: border-box
+
+    font-size: 26px
+    &__item
+        all: unset
+        cursor: pointer
+        text-align: center
+        transition: opacity .2s linear
+        color: white
+        &_active
+            border-bottom: 2px solid white
+        &:hover
+            opacity: .8

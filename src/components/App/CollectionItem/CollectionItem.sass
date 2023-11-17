@@ -1,0 +1,25 @@
+.collection
+    width: 400px
+    padding: 0 20px
+    display: flex
+    align-items: center
+    border-radius: 6px
+    background: #012618
+    margin-right: 20px
+    transition: box-shadow .2s linear
+    cursor: pointer
+    &:hover
+        box-shadow: inset 0px 0px 10px 3px rgba(58, 157, 122, 0.48)
+    &__title
+        flex-grow: 1
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+        max-width: 370px
+    &__icon
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        width: 30px
+        height: 50px
+        flex-shrink: 0

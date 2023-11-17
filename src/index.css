@@ -1,0 +1,18 @@
+@import url(./vendors/fonts/fonts.css);
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#root {
+  background-color: #013925;
+  font-family: "AlegreyaSC", Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  cursor: default;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
