@@ -1,0 +1,82 @@
+.form
+    display: flex
+    flex-direction: column
+
+    width: 300px
+    &_add-tea
+        margin-top: 20px
+    &__rate-title
+        margin: 10px 0 5px
+        text-align: center
+        font-weight: 600
+
+    &__rate-fieldset
+        all: unset
+        gap: 10px
+        margin: 0 auto 20px
+        display: flex
+        justify-content: space-around
+    &__rate-input
+        all: unset
+        display: block
+        width: 20px
+        height: 20px
+        background-color: rgba(0,0,0,0.3)
+        border-radius: 50%
+        &:checked, &_active
+            background-color: rgba(14, 153, 49, 0.788)
+    &__title
+        margin: 0 0 20px
+        text-align: center
+        font-size: 24px
+    &__label
+        display: flex
+        flex-direction: column
+        text-align: center
+        color: white
+        gap: 10px
+        &:not(:first-of-type)
+            margin-top: 10px
+        &[for='rate']
+            display: flex
+            flex-direction: row
+    &__input
+        all: unset
+        padding: 5px 10px
+        text-align: left
+        cursor: text
+        background: rgba(0,0,0,.4)
+        border-radius: 10px
+        font-size: 14px
+        color: white
+    &__input[id='comment'], &__input[id='description']
+        height: 275px
+    &__submit
+        all: unset
+        cursor: pointer
+        text-align: center
+
+    &__label[name='file']
+        display: flex
+        margin: 0
+        color: white
+        position: relative
+        border-radius: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 15px
+        font-weight: 600
+        text-transform: uppercase
+        cursor: pointer
+
+    &__file-input[type='file']
+        all: unset
+        width: 130px
+        height: 30px
+        position: absolute
+        top: 0
+        left: 7px
+        opacity: 0
+    &__label[for='description']
+        margin-bottom: 10px

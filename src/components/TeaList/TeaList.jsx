@@ -6,12 +6,9 @@ function TeaList({ onMore }) {
     return (
         <ul className="tea-list">
             {InitialList.map(tea => (
-                <CardOfTea
-                    onMore={onMore}
-                    key={tea.id}
-                    {...tea}
-                    place="all-tea"
-                />
+                <li key={tea.id}>
+                    <CardOfTea onMore={onMore} {...tea} place="all-tea" />
+                </li>
             ))}
         </ul>
     );

@@ -25,11 +25,10 @@ module.exports = {
     },
     plugins: ['react'],
     rules: {
-        // 'no-var': 'error',
+        'no-var': 'error',
         'prefer-const': 'warn',
         'no-unused-vars': 'warn',
         'react/react-in-jsx-scope': 'off',
-        'react/props-types': 'off',
         'prettier/prettier': ['warn', { endOfLine: 'auto' }],
     },
 };

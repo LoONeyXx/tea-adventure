@@ -5,7 +5,7 @@ function CardOfTea({
     title,
     description,
     place,
-    category,
+    categorie,
     isNew,
     id,
     onMore,
@@ -15,7 +15,7 @@ function CardOfTea({
         onMore({ title, image, description });
     }
     return (
-        <li
+        <div
             style={{
                 backgroundImage: `url(${image})`,
             }}
@@ -26,7 +26,7 @@ function CardOfTea({
                 <div
                     className={`card__circle-color card__circle-color_${place} `}
                 >
-                    <p className="card__category">{category}</p>
+                    <p className="card__category">{categorie}</p>
                     {isNew && (
                         <div className={`card__new card__new_${place}`}>
                             Новинка
@@ -38,14 +38,16 @@ function CardOfTea({
             <p className={`card__description card__description_${place}`}>
                 {description.slice(0, 500)}
             </p>
-            <Link
-                to={place === 'main' ? `all-tea/${id}` : id}
-                onClick={handleMore}
-                className={`card__more-about card__more-about_${place}`}
-            >
-                Подбробнее
-            </Link>
-        </li>
+            {place !== 'add-tea' && (
+                <Link
+                    to={place === 'main' ? `all-tea/${id}` : id}
+                    onClick={handleMore}
+                    className={`card__more-about card__more-about_${place}`}
+                >
+                    Подбробнее
+                </Link>
+            )}
+        </div>
     );
 }
 export default CardOfTea;

@@ -1,4 +1,5 @@
 import ColorMenu from '../../components/Categories/Categories';
+
 import Content from '../../components/Content/Content';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -10,13 +11,14 @@ function AllTea({ onMore }) {
     return (
         <>
             <Header />
-            <Content place='all-tea'>
+            <Content place="all-tea">
                 <Section title="Все товары" name="all-tea">
                     <TeaList onMore={onMore} />
                 </Section>
                 <section className="categories">
                     <ColorMenu />
                 </section>
+
             </Content>
             <Footer />
         </>

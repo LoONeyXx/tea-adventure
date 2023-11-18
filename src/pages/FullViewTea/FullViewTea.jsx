@@ -5,13 +5,14 @@ import imageSrc from '../../assets/images/background.jpg';
 import Content from '../../components/Content/Content';
 import { Link } from 'react-router-dom';
 import Comments from '../../components/Comments/Comments';
+import Section from '../../components/Section/Section';
 function FullViewTea({ title, description, image }) {
     console.log(title, description, image);
     return (
         <>
             <Header />
             <Content place="full-view">
-                <section className="full-view">
+                <Section name="full-view full-view">
                     <div className="full-view__title-zone">
                         <img className="full-view__image" src={image} alt="" />
                         <h2 className="full-view__title">{title}</h2>
@@ -25,8 +26,8 @@ function FullViewTea({ title, description, image }) {
                     <Link className="full-view__back-link" to="../">
                         Назад
                     </Link> */}
-                </section>
-
+                </Section>
+                <Comments />
             </Content>
             <Footer />
         </>

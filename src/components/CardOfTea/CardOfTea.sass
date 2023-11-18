@@ -7,11 +7,12 @@
     background-size: cover
     background-repeat: no-repeat
     border-radius: 15px
+
     &_all-tea
         width: 280px
         padding: 0 0 10px
         height: 350px
-    &_main
+    &_main,   &_add-tea
         padding: 0 0 10px
         width: 330px
         height: 445px
@@ -37,10 +38,8 @@
         &_all-tea
             max-height: 60px
             border-radius: 13px 13px 0 0
-
             padding: 10px 15px 10px 15px
-
-        &_main
+        &_main,   &_add-tea
             max-height: 70px
             border-radius: 15px 15px 0 0
             padding: 10px 15px 10px 15px
@@ -59,7 +58,7 @@
         color: #DBE9A2
         &_all-tea
             font-size: 16px
-        &_main
+        &_main,  &_add-tea
             font-size: 20px
 
     &__circle-color
@@ -90,14 +89,13 @@
         text-transform: uppercase
         border-radius: 14px 14px
         font-weight: 500
-
         &_all-tea
             left: 6px
             top: 54px
             font-size: 12px
             padding: 3px 10px
-        &_main
-            top: 55px
+        &_main,   &_add-tea
+            top: 52px
             padding: 5px 10px
             left: 1px
             font-size: 14px
@@ -108,7 +106,9 @@
         text-align: center
         flex-grow: 1
         font-size: 13px
-        &_main
+        &_add-tea
+            min-height: 300px
+        &_main, &_add-tea
             font-size: 16px
             max-width: 90%
             margin: 10px auto

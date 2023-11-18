@@ -1,0 +1,27 @@
+.type-of-tea
+    all: unset
+    padding: 0
+    display: flex
+    max-width: 300px
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 10px
+    margin: 10px 0 20px
+    &__label
+        position: relative
+        &:hover, &:focus
+
+            text-shadow: 0 0 5px white
+    &__input
+        all: unset
+        position: absolute
+        width: 100%
+        left: 0
+        top: 0
+        box-sizing: border-box
+        height: 100%
+
+        cursor: pointer
+        &:checked
+            border-bottom: 1px solid #fff

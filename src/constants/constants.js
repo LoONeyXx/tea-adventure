@@ -4,7 +4,7 @@ import CollectionList from '../components/CollectionList/CollectionList';
 export const InitialList = [
     {
         title: 'Name of tea',
-        category: 'Красный',
+        categorie: 'Красный',
         isNew: true,
         country: 'China',
         description:
@@ -14,7 +14,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'Зеленый',
+        categorie: 'Зеленый',
         isNew: false,
         country: 'China',
         description:
@@ -24,7 +24,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'Улун',
+        categorie: 'Улун',
         isNew: true,
         country: 'China',
         description:
@@ -34,7 +34,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'Белый',
+        categorie: 'Белый',
         isNew: false,
         country: 'China',
         description:
@@ -44,7 +44,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'Хейча',
+        categorie: 'Хейча',
         isNew: false,
         country: 'China',
         description:
@@ -54,7 +54,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'Пуэр',
+        categorie: 'Пуэр',
         isNew: false,
         country: 'China',
         description:
@@ -64,7 +64,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'Добавки',
+        categorie: 'Добавки',
         isNew: false,
         country: 'China',
         description:
@@ -74,7 +74,7 @@ export const InitialList = [
     },
     {
         title: 'Name of tea',
-        category: 'white',
+        categorie: 'white',
         isNew: false,
         country: 'China',
         description:
@@ -193,7 +193,54 @@ export const collectionsList = [
         }),
     },
 ];
-const comments = [{
-    name:'',
-    
-}.]
+export const comments = [
+    {
+        name: 'Сергей',
+        description:
+            'Прекрасный чай. Пил с удовольствем все советую. Прекрасный чай. Пил с удовольствем все советую. Прекрасный чай. Пил с удовольствем все советую. Прекрасный чай. Пил с удовольствем все советую',
+        id: 1,
+        rate: 10,
+        date: Date.now().toLocaleString(),
+        likes: [],
+    },
+    {
+        name: 'Сергей',
+        description: 'чай хуйня полнейшая. Купил того рот бомбил',
+        id: 2,
+        rate: 1,
+        date: Date.now().toLocaleString(),
+        likes: [],
+    },
+    {
+        name: 'Сергей',
+        description: 'чай хуйня полнейшая. Купил того рот бомбил',
+        id: 3,
+        rate: 7,
+        date: Date.now().toLocaleString(),
+        likes: [],
+    },
+    {
+        name: 'Сергей',
+        description: 'чай хуйня полнейшая. Купил того рот бомбил',
+        id: 4,
+        rate: 3,
+        date: Date.now().toLocaleString(),
+        likes: [],
+    },
+    {
+        name: 'Сергей',
+        description: 'чай хуйня полнейшая. Купил того рот бомбил',
+        id: 5,
+        rate: 2,
+        date: Date.now().toLocaleString(),
+        likes: [],
+    },
+    {
+        name: 'Сергей',
+        description: 'чай хуйня полнейшая. Купил того рот бомбил',
+        id: 6,
+        rate: 8,
+        date: Date.now().toLocaleString(),
+        likes: [],
+    },
+];
