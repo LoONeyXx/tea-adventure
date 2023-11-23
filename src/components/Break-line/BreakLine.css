@@ -1,0 +1,11 @@
+.break-line {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 10px;
+    background-color: rgba(60, 119, 48, 0.348);
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+.break-line_place_comment {
+    margin: 0 auto;
+} /*# sourceMappingURL=BreakLine.css.map */

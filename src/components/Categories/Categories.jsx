@@ -1,16 +1,17 @@
 import './Categories.sass';
 import { categories } from '../../constants/constants';
-
-function Categories(props) {
-    console.log(categories);
+import Section from '../Section/Section';
+function Categories() {
     return (
-        <ul className="categories-menu">
-            {categories.map((category, index) => (
-                <button key={index} className="categories-menu__item">
-                    {category}
-                </button>
-            ))}
-        </ul>
+        <Section name="categories">
+            <ul className="categories__menu">
+                {categories.map((category, index) => (
+                    <button key={index} className="categories__menu-item">
+                        {category}
+                    </button>
+                ))}
+            </ul>
+        </Section>
     );
 }
 export default Categories;

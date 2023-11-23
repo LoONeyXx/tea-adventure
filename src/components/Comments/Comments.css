@@ -1,0 +1,28 @@
+.comments__list-zone {
+  margin-top: 15px;
+  margin-left: 40px;
+  max-height: 530px;
+  overflow-y: auto;
+}
+.comments__list-zone::-webkit-scrollbar {
+  background-color: rgba(41, 116, 90, 0.4980392157);
+  border-radius: 10px;
+}
+.comments__list-zone::-webkit-scrollbar-button {
+  height: 0;
+}
+.comments__list-zone::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5882352941);
+  border-radius: 10px;
+}
+.comments__title-zone {
+  text-align: center;
+}
+.comments__title {
+  text-align: center;
+  margin: 0;
+}
+.comments__comment-zone {
+  flex-grow: 1;
+  width: 450px;
+}/*# sourceMappingURL=Comments.css.map */

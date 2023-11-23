@@ -1,5 +1,4 @@
 import './CardOfTea.sass';
-import backgroundImage from '../../assets/images/background.jpg';
 import { Link } from 'react-router-dom';
 function CardOfTea({
     title,
@@ -14,10 +13,11 @@ function CardOfTea({
     function handleMore() {
         onMore({ title, image, description });
     }
+
     return (
         <div
             style={{
-                backgroundImage: `url(${image})`,
+                backgroundImage: `url('../src/assets/images/background.jpg')`,
             }}
             className={`card card_${place}`}
         >

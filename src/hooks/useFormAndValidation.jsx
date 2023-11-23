@@ -26,18 +26,32 @@ export default function useFormAndValidation(initializeValues) {
             const format = value.split('.').pop();
             const isValid = allowedFormats.includes(format);
             if (isValid) {
-                setValues(prev => ({ ...prev, image: value }));
+                setValues(prev => ({
+                    ...prev,
+                    image: 'http://localhost:8080/src/assets/background.jpg',
+                }));
                 setValid(e.target.closest('form').checkValidity());
             } else {
                 setErrorMessages({
                     ...errorMessages,
-                    [name]: e.target.validationMessage,
+                    [name]: 'Неверный формат',
                 });
                 setValues(prev => ({ ...prev, image: '' }));
                 setValid(false);
             }
         },
         [setValues, setValid],
+    );
+    const handleCheckbox = useCallback(
+        e => {
+            const { name } = e.target;
+            if (e.target.checked) {
+                setValues(prev => ({ ...prev, [name]: true }));
+            } else {
+                setValues(prev => ({ ...prev, [name]: false }));
+            }
+        },
+        [setValues],
     );
     const resetForm = useCallback(
         (newValues = {}, newErrors = {}, newIsValid = false) => {
@@ -57,5 +71,6 @@ export default function useFormAndValidation(initializeValues) {
         setValues,
         setValid,
         handleLoadImage,
+        handleCheckbox,
     };
 }

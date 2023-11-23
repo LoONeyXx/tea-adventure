@@ -10,18 +10,22 @@ import TypeOfTeaFieldset from '../../components/TypeOfTeaFieldset/TypeOfTeaField
 import { useEffect } from 'react';
 import Breakline from '../../components/Break-line/BreakLine';
 import CardOfTea from '../../components/CardOfTea/CardOfTea';
-function AddTea(props) {
-    const { values, handleChangeInput, isValid, handleLoadImage } =
-        useFormAndValidation({
-            title: '',
-            description: '',
-            id: '',
-            categorie: '',
-            isNew: true,
-            country: 'test',
-            image: '',
-        });
-
+function AddTea() {
+    const {
+        values,
+        handleChangeInput,
+        isValid,
+        handleLoadImage,
+        handleCheckbox,
+    } = useFormAndValidation({
+        title: '',
+        description: '',
+        id: '',
+        categorie: '',
+        isNew: false,
+        country: 'test',
+        image: '',
+    });
     useEffect(() => {
         console.log(values);
     }, [values]);
@@ -57,6 +61,15 @@ function AddTea(props) {
                                 type="text"
                                 onChange={handleChangeInput}
                                 className="form__input"
+                            />
+                        </label>
+                        <label className="form__label" name="isNew">
+                            Новинка
+                            <input
+                                type="checkbox"
+                                name="isNew"
+                                onChange={handleCheckbox}
+                                className="form__new-checkbox"
                             />
                         </label>
                         <Breakline />

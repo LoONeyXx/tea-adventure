@@ -3,21 +3,17 @@ import './CollectionTea.sass';
 function CollectionTea({ tea }) {
     return (
         <li className="collection-tea">
+            <button type="button" className="collection-tea__close"></button>
             <p className="collection-tea__category">{tea.categorie}</p>
             <h4 className="collection-tea__title">{tea.title}</h4>
-            <form
-                disabled
-                className="collection-tea__form"
-                action="#"
-                noValidate
-            >
+            <p className="collection-tea__counter">
                 <input
-                    disabled
-                    type="text"
-                    defaultValue="0"
-                    className="collection-tea__counter"
+                    type="number"
+                    className="collection-tea__input-counter"
+                    onChange={e => e.target.value++}
+                    value={0}
                 />
-            </form>
+            </p>
         </li>
     );
 }

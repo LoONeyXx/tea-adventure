@@ -1,4 +1,4 @@
-import ColorMenu from '../../components/Categories/Categories';
+import Categories from '../../components/Categories/Categories';
 
 import Content from '../../components/Content/Content';
 import Footer from '../../components/Footer/Footer';
@@ -15,10 +15,7 @@ function AllTea({ onMore }) {
                 <Section title="Все товары" name="all-tea">
                     <TeaList onMore={onMore} />
                 </Section>
-                <section className="categories">
-                    <ColorMenu />
-                </section>
-
+                <Categories />
             </Content>
             <Footer />
         </>

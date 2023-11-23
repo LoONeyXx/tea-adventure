@@ -1,0 +1,110 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.form_add-tea {
+  margin-top: 20px;
+}
+.form__rate-title {
+  margin: 10px 0 5px;
+  text-align: center;
+  font-weight: 600;
+}
+.form__rate-fieldset {
+  all: unset;
+  gap: 10px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.form__rate-input {
+  all: unset;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.form__rate-input:checked, .form__rate-input_active {
+  background-color: rgba(14, 153, 49, 0.781);
+}
+.form__title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 24px;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  gap: 10px;
+}
+.form__label:not(:first-of-type) {
+  margin-top: 10px;
+}
+.form__label[for=rate] {
+  display: flex;
+  flex-direction: row;
+}
+.form__input {
+  all: unset;
+  padding: 5px 10px;
+  text-align: left;
+  cursor: text;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+}
+.form__input[id=comment], .form__input[id=description] {
+  height: 275px;
+}
+.form__submit {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+}
+.form__label[name=isNew] {
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.form__label[name=file] {
+  display: flex;
+  margin: 0;
+  color: white;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form__file-input[type=file] {
+  all: unset;
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 7px;
+  opacity: 0;
+}
+.form__file-input[type=checkbox] {
+  all: unset;
+  background-color: #196b2a;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.form__file-input[type=checkbox]:checked {
+  background-color: #ffffff;
+}
+.form__label[for=description] {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=Form.css.map */

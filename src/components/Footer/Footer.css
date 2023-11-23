@@ -1,0 +1,28 @@
+.footer {
+  min-height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  padding: 0 70px;
+  color: white;
+  justify-content: space-between;
+  background-color: #180E0E;
+  background-color: rgba(0, 2, 0, 0.3882352941);
+  align-items: center;
+}
+.footer__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+.footer__link {
+  text-transform: uppercase;
+  font-size: 14pxa;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 14px;
+}
+.footer__copyright-text {
+  margin: 0;
+}/*# sourceMappingURL=Footer.css.map */

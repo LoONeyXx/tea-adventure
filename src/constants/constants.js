@@ -1,5 +1,4 @@
 import backgrondImage from '../assets/images/background.jpg';
-import CollectionList from '../components/CollectionList/CollectionList';
 
 export const InitialList = [
     {

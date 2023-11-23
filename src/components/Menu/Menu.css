@@ -1,0 +1,19 @@
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  font-size: 18px;
+}
+.menu__link {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+.menu__link:hover {
+  opacity: 0.8;
+}
+.menu__link_active, .menu__link:focus {
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=Menu.css.map */

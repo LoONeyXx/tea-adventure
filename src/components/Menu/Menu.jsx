@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Menu.sass';
 
-function Menu(props) {
+function Menu() {
     return (
         <ul className="menu">
             <li>

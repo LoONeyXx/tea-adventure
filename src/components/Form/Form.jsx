@@ -8,7 +8,12 @@ function Form({ title, name, onSubmit = null, children }) {
         }
     };
     return (
-        <form className={`form form_${name}`} onSubmit={handleSubmit}>
+        <form
+            encType="multipart/form-data"
+            autoComplete="false"
+            className={`form form_${name}`}
+            onSubmit={handleSubmit}
+        >
             {title && (
                 <h3 className={`form__title form__title_${name}`}>{title}</h3>
             )}

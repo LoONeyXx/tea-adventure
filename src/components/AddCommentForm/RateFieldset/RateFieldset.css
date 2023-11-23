@@ -1,0 +1,18 @@
+.rate {
+  all: unset;
+  gap: 10px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.rate__input {
+  all: unset;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.rate__input:checked, .rate__input_active {
+  background-color: rgba(14, 153, 49, 0.788);
+}/*# sourceMappingURL=RateFieldset.css.map */

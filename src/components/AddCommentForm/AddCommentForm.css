@@ -1,0 +1,46 @@
+.add-comment-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+.add-comment-form__rate-title {
+  margin: 10px 0 5px;
+  text-align: center;
+  font-weight: 600;
+}
+.add-comment-form__title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.add-comment-form__label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  gap: 10px;
+}
+.add-comment-form__label:not(:first-of-type) {
+  margin-top: 10px;
+}
+.add-comment-form__label[for=rate] {
+  display: flex;
+  flex-direction: row;
+}
+.add-comment-form__input {
+  all: unset;
+  padding: 5px 10px;
+  text-align: left;
+  cursor: text;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+}
+.add-comment-form__input[id=comment] {
+  height: 200px;
+}
+.add-comment-form__submit {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+}/*# sourceMappingURL=AddCommentForm.css.map */

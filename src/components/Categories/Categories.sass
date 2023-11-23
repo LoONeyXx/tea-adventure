@@ -1,23 +1,26 @@
-.categories-menu
-    all: unset
-    list-style: none
-    padding: 0
-    display: flex
-    flex-direction: column
-    gap: 20px
-    width: 200px
-    background-color: rgb(4 14 14 / 60%)
-    padding: 50px 20px 0
-    box-sizing: border-box
+.categories
 
-    font-size: 26px
-    &__item
+    &__menu
         all: unset
-        cursor: pointer
-        text-align: center
-        transition: opacity .2s linear
-        color: white
-        &_active
-            border-bottom: 2px solid white
-        &:hover
-            opacity: .8
+        list-style: none
+        padding: 0
+        display: flex
+        flex-direction: column
+        gap: 20px
+        width: 200px
+        padding: 50px 20px 0
+        box-sizing: border-box
+        position: sticky
+        top: 0
+        left: 0
+        font-size: 26px
+        &-item
+            all: unset
+            cursor: pointer
+            text-align: center
+            transition: opacity .2s linear
+            color: white
+            &:hover
+                opacity: .8
+            &_active
+                border-bottom: 2px solid white

@@ -1,0 +1,24 @@
+.collection-list {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+  list-style: none;
+  margin-top: 50px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 600px;
+}
+.collection-list::-webkit-scrollbar {
+  background-color: rgba(41, 116, 90, 0.4980392157);
+  border-radius: 10px;
+}
+.collection-list::-webkit-scrollbar-button {
+  height: 0;
+}
+.collection-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5882352941);
+  border-radius: 10px;
+}/*# sourceMappingURL=CollectionList.css.map */

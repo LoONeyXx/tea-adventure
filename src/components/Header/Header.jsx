@@ -1,7 +1,7 @@
 import './Header.sass';
 import Menu from '../Menu/Menu';
 import logo from '../../assets/images/logo.svg';
-function Header(props) {
+function Header() {
     return (
         <header className="header">
             <Menu></Menu>

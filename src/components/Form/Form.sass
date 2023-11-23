@@ -55,7 +55,11 @@
         all: unset
         cursor: pointer
         text-align: center
-
+    &__label[name='isNew']
+        flex-direction: row
+        margin: 0 auto
+        justify-content: center
+        align-items: center
     &__label[name='file']
         display: flex
         margin: 0
@@ -78,5 +82,14 @@
         top: 0
         left: 7px
         opacity: 0
+    &__new-checkbox
+        all: unset
+        background-color: #ffffff
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        &:checked
+            background-color: #0bed56
+            box-shadow: 0 0 5px #fff
     &__label[for='description']
         margin-bottom: 10px

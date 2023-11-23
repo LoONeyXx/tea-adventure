@@ -1,0 +1,9 @@
+.circle-color_active {
+  box-shadow: 0 0 10px white;
+}
+.circle-color_place_menu {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}/*# sourceMappingURL=CirecleColor.css.map */
